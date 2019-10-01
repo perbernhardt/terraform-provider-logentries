@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	plugin.Serve(&plugin.ServeOpts{
-		ProviderFunc: logentries.Provider})
+	plugin.Serve(new(logentries.Provider))
 }
